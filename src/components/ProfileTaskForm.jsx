@@ -33,7 +33,7 @@ const ProfileTaskForm = () => {
 
         const task = {userName, attention, memory, execFunction, language, difficulty, closeMatch}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/profile`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/profile`, task)
         .then(
             console.log('posted ' + JSON.stringify(task))
         )
