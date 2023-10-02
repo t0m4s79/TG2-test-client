@@ -26,7 +26,7 @@ const SoupTaskForm = () => {
 
         const task = {elements, cues}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/wordSoup`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/wordSoup`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
