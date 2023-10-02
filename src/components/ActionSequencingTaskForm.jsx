@@ -27,7 +27,7 @@ const ActionSequencingTaskForm = () => {
         const task = {actionType, elements}
         //console.log(task)
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/actionsequencing`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/actionsequencing`, task)
             .then(
                 console.log('posted ', task)
             )
