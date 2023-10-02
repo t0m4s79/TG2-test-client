@@ -11,20 +11,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/:language" element={<Navbar />} >
-                    <Route path={`cancellation`} element={<CancellationTaskForm />} />
-                    <Route path={`sequencing`} element={<SequencingTaskForm />} />
-                    <Route path={`problem`} element={<ProblemTaskForm />} />
-                    <Route path={`association`} element={<AssociationTaskForm />} />
-                    <Route path={`context`} element={<ContextTaskForm />} />
-                    <Route path={`categorization`} element={<CategorizationTaskForm />} />
-                    <Route path={`actionsequencing`} element={<ActionSequencingTaskForm />} />
-                    <Route path={`imagepairs`} element={<ImagePairsTaskForm />} />
-                    <Route path={`maze`} element={<MazeTaskForm />} />
-                    <Route path={`wordSoup`} element={<SoupTaskForm />} />
-                    <Route path={`memoryRecall`} element={<MemoryRecallTaskForm />} />
-                    <Route path={`profile`} element={<ProfileTaskForm />} />
-                </Route>
+                <Route path="/:language" element={<Navbar />} />
             </Routes>
 
     </div>
