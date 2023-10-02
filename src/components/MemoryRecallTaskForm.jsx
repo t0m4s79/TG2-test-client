@@ -27,7 +27,7 @@ const MemoryRecallTaskForm = () => {
         const task = {storyType, storyQuestions}
         //console.log(task)
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/memoryRecall`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/memoryRecall`, task)
             .then(
                 console.log('posted ', task)
             )
