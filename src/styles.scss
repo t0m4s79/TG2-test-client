@@ -1,0 +1,123 @@
+// Original code by tomliangg
+// Source: https://codesandbox.io/s/g6vuy?file=/src/styles.scss
+
+// Modified by Tomás Marcos
+// Changes Made:
+// - Added userpath to represent visited nodes
+// - <Describe your changes here>
+// ...
+
+.Maze{
+    flex-grow: 1;
+    padding: 15px;
+    height: 60dvh;
+    margin: 5%;
+  
+  .topWall {
+    border-top: 2px solid black;
+  }
+  
+  .rightWall {
+    border-right: 2px solid black;
+  }
+  
+  .bottomWall {
+    border-bottom: 2px solid black;
+  }
+  
+  .leftWall {
+    border-left: 2px solid black;
+  }
+  
+  .sol {
+    div {
+      height: 50%;
+      width: 50%;
+      //border-radius: 50%;
+      background: peachpuff;
+      display: inline-block;
+    }
+  }
+  .userPath {
+    div{
+        height: 40%;
+        width: 40%;
+        border-radius: 50%;
+        background-color:#c1c1c1;
+        ;
+        display: inline-block;
+    }
+  }
+  
+  .currentPosition {
+    div {
+      background: salmon;
+      height: 50%;
+      width: 50%;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+  
+  .destination {
+    div {
+      background: SpringGreen;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+  
+  .currentPosition.destination {
+    div {
+      animation: rainbowBall 5s infinite;
+    }
+  }
+  
+  @keyframes rainbowBall {
+    0%   {background-color: gold;}
+    15%  {background-color: coral;}
+    29%  {background-color: papayawhip;}
+    43%  {background-color: darkseagreen;}
+    57%  {background-color: lightcyan;}
+    71% {background-color: dodgerblue;}
+    84% {background-color: violet;}
+    100% {background-color: indigo;}
+  }
+  
+  #maze {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 70%;
+    height: 90%;
+    aspect-ratio: 4 / 3;
+    td {
+        height: 20px;
+        width: 20px;
+    }
+  }
+  
+  .info {
+    margin-top: 20px;
+    width: 100%;
+    background: cornsilk;
+    padding: 3px;
+    font-size: 20px;
+    p {
+      text-transform: uppercase;
+      color: forestgreen;
+    }
+  }
+
+  .dpad{
+
+    .dpad-row{
+        margin: 10px;
+
+        button{
+            padding: 1rem;
+        }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.taskTable {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+div [class^='row-']{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.taskTable label {
+  background: rgb(245, 245, 245);
+  float: left;
+  min-width: 4rem;
+  min-height: 3rem;
+  line-height: 2.5rem;
+  cursor: pointer;
+  border: 1px solid #9098A9;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all .2s ease;
+}
+
+.taskTable label span {
+  height: 100%;
+  text-align: center;
+  display: block;
+}
+
+.taskTable label input {
+  position: absolute;
+  display: none;
+}
+
+.taskTable label:hover {
+  background: #506fec96;
+  border-color: #506EEC;
+  box-shadow: 0 6px 16px rgba(gray,.5)
+}
+
+.taskTable input:checked + span{
+  background: #506fec46; 
+  padding: 2.5px;
+  border: 3px solid blue;
+  animation: wave 0.4s ease;
+}
+
+.taskTable input:checked + label:before{
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all .6s ease;
+}
+
+
+@keyframes wave{
+  50% {transform: scale(.9)};
+}
+
+/* Association task specific styles*/
+
+.card{
+  padding: 20px;
+  margin: 5px;
+  border: 2px solid #9098A9;
+  border-radius: 10%;
+}
+
+
+div [class^='category-image-'] {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid #9098A9;
+  border-radius: 5%;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.imagePairs {
+    width: 60%;
+}
+
+.imagePairs td {
+    padding: 10px 0;
+    border: 5px solid #9098A9;
+    border-radius: 5%;
+}
