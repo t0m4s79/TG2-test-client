@@ -4,7 +4,7 @@ import axios from 'axios';
 export default function saveDataToBackend(data, task) {
 
     const taskData = {task, data}
-    axios.post('http://localhost:3000/store-data', taskData)
+    axios.post('https://tg-api-37pc.onrender.com/store-data', taskData)
     .then((response) => {
         console.log(response.data.message);
         alert(response.data.message)
