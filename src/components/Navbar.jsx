@@ -79,18 +79,18 @@ const Navbar = () => {
                         onChange={(e,value) => {setValue(value)}}
                         textColor="secondary"
                         value={value}>
-                        <Tab label='Profile' component={Link} to=`/${language}/profile` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Cancellation' component={Link} to=`/${language}/cancellation` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Number<br/>Sequencing</span>} component={Link} to=`/${language}/sequencing` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Problem<br/>Resolution</span>} component={Link} to=`/${language}/problem` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Association' component={Link} to=`/${language}/association` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Context' component={Link} to=`/${language}/context` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Categorization' component={Link} to=`/${language}/categorization` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Action<br/>Sequencing</span>} component={Link} to=`/${language}/actionsequencing` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Image Pairs'  component={Link} to=`/${language}/imagepairs` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label='Labyrinth' component={Link} to=`/${language}/maze` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Scrambled<br/>Words</span>} component={Link} to=`/${language}/wordSoup` sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Memory<br/>Recall</span>} component={Link} to=`/${language}/memoryRecall` sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Profile' component={Link} to={`/${language}/profile`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Cancellation' component={Link} to={`/${language}/cancellation`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Number<br/>Sequencing</span>} component={Link} to={`/${language}/sequencing`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Problem<br/>Resolution</span>} component={Link} to={`/${language}/problem`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Association' component={Link} to={`/${language}/association`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Context' component={Link} to={`/${language}/context`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Categorization' component={Link} to={`/${language}/categorization`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Action<br/>Sequencing</span>} component={Link} to={`/${language}/actionsequencing`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Image Pairs'  component={Link} to={`/${language}/imagepairs`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label='Labyrinth' component={Link} to={`/${language}/maze`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Scrambled<br/>Words</span>} component={Link} to={`/${language}/wordSoup`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Memory<br/>Recall</span>} component={Link} to={`/${language}/memoryRecall`} sx={{ color: theme.palette.primary.contrastText }} />
 
                     </Tabs>
                 </Box>
