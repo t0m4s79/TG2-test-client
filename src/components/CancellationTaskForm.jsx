@@ -21,7 +21,7 @@ const CancellationTaskForm = () => {
         const task = {elements,probability,size,numbers,order}
         //console.log(task)
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/cancellation`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/cancellation`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
