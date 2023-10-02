@@ -10,7 +10,7 @@ function App() {
     <div className="App">
 
             <Routes>
-                
+                <Route path="/" element={<LandingPage />} />
                 <Route path="/:language" element={<Navbar />} />
             </Routes>
 
