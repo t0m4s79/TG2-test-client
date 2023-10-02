@@ -24,7 +24,7 @@ const SequencingTaskForm = () => {
 
         const task = {elements, step, order, where, missing}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/sequencing`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/sequencing`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
