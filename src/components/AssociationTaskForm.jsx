@@ -26,7 +26,7 @@ const AssociationTaskForm = () => {
 
         const task = {size, imageType}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/association`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/association`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
