@@ -26,7 +26,7 @@ const CategorizationTaskForm = () => {
 
         const task = {categories, elements}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/categorization`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/categorization`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
