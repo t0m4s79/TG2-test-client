@@ -11,7 +11,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/:language/" element={<Navbar />} >
+                <Route path="/:language" element={<Navbar />} >
                     <Route path={`cancellation`} element={<CancellationTaskForm />} />
                     <Route path={`sequencing`} element={<SequencingTaskForm />} />
                     <Route path={`problem`} element={<ProblemTaskForm />} />
