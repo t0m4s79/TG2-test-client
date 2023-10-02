@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   // Handle language selection and redirection
   const handleLanguageSelection = (language) => {
@@ -11,7 +11,7 @@ const LandingPage = () => {
     localStorage.setItem('selectedLanguage', language);
 
     // Redirect to the task list with the selected language
-    history.push(`/${language}/profile`);
+    navigate(`/${language}/profile`);
   };
 
   return (
