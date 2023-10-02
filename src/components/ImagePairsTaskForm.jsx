@@ -27,7 +27,7 @@ const ImagePairsTaskForm = () => {
 
         const task = {size, timeout, imageType}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/imagePairs`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/imagePairs`, task)
             .then(
                 console.log('posted ' + JSON.stringify(task))
             )
