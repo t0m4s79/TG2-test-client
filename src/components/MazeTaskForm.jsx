@@ -26,7 +26,7 @@ const MazeTaskForm = () => {
         const task = {mazeElements}
         //console.log(task)
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/maze`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/maze`, task)
             .then(
                 console.log('posted ', task)
             )
