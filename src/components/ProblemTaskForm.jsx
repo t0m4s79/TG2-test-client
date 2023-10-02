@@ -24,7 +24,7 @@ const ProblemTaskForm = () => {
 
         const task = {size, tens, explicit}
 
-        axios.post(`http://localhost:3001/${selectedLanguage}/problem`, task)
+        axios.post(`https://tg-api-37pc.onrender.com/${selectedLanguage}/problem`, task)
         .then(
             console.log('posted ' + JSON.stringify(task))
         )
