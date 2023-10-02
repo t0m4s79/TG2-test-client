@@ -86,7 +86,7 @@ const Navbar = () => {
                         <Tab label='Association' component={Link} to={`/association`} sx={{ color: theme.palette.primary.contrastText }} />
                         <Tab label='Context' component={Link} to={`/context`} sx={{ color: theme.palette.primary.contrastText }} />
                         <Tab label='Categorization' component={Link} to={`/categorization`} sx={{ color: theme.palette.primary.contrastText }} />
-                        <Tab label={<span>Action<br/>Sequencing</span>} component={Link} to={`/${language}/actionsequencing`} sx={{ color: theme.palette.primary.contrastText }} />
+                        <Tab label={<span>Action<br/>Sequencing</span>} component={Link} to={`/actionsequencing`} sx={{ color: theme.palette.primary.contrastText }} />
                         <Tab label='Image Pairs'  component={Link} to={`/imagepairs`} sx={{ color: theme.palette.primary.contrastText }} />
                         <Tab label='Labyrinth' component={Link} to={`/maze`} sx={{ color: theme.palette.primary.contrastText }} />
                         <Tab label={<span>Scrambled<br/>Words</span>} component={Link} to={`/wordSoup`} sx={{ color: theme.palette.primary.contrastText }} />
